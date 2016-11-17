@@ -29,7 +29,7 @@ var SearchlocQuery = new Parse.Query(connection);
 				 //console.log(result[0].get("User"));
 				 if(result[0].get("Password")==pwd)
 				 {
-					window.open("home.html","_self")
+					window.open(result[0].get("url"),"_self")
 					 
 				 }
 				 else
